@@ -112,8 +112,7 @@ services:
           - /usr/share/nginx/html
           - /var/run/docker.sock:/tmp/docker.sock:ro
     nextcloud:
-     image: nextcloud:local
-     build: .
+     image: zxjack/nextcloud-aria2
      container_name: nextcloud
      ports:
           - "8000:80"
