@@ -111,7 +111,7 @@ services:
           - /root/proxy/vhost.d:/etc/nginx/vhost.d:rw
           - /usr/share/nginx/html
           - /var/run/docker.sock:/tmp/docker.sock:ro
-    nextcloud:
+   nextcloud:
      image: zxjack/nextcloud-aria2
      container_name: nextcloud
      ports:
